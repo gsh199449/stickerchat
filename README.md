@@ -69,7 +69,9 @@ Each line in the JSON file represents one data sample, which contains the dialog
 @inproceedings{gao2020sticker,
   title={Learning to Respond with Stickers: A Framework of Unifying Multi-Modality in Multi-Turn Dialog},
   author={Gao, Shen and Chen, Xiuying and Li, Mingzhe and Liu, Li and Zhao, Dongyan and Yan, Rui},
-  booktitle = {WWW},
+  booktitle = {The World Wide Web Conference},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
   year = {2020}
 }
 ```
