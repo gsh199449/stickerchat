@@ -12,7 +12,7 @@ The dataset is only for research purposes. Without permission, it may not be use
 
 `npy_stickers`: is a directory which stores all the sticker set. Each sticker is convered into a numpy matrix and stored in an `.npy` file.
 
-`inception_v3*`: are the checkpoint files which stores the parameter of the Inception_V3 model.
+`inception_v3*`: are the checkpoint files which stores the parameter of the Inception_V3 model. The parameters in this checkpoint is copied from the checkpoint released by TensorFlow. But the original checkpoint file released by TensorFlow can not be used at this project, since we change the name scope of the variables to load in our model.
 
 `release_test.json`: test dataset, contains 10000 lines.
 
@@ -63,13 +63,15 @@ Each line in the JSON file represents one data sample, which contains the dialog
 }
 ```
 
+Note that the `sticker_alt` is given by the author of the sticker set, some of the authors use random emoji labels in their sticker set.
+
 # Citation
 
 ```bibtex
 @inproceedings{gao2020sticker,
   title={Learning to Respond with Stickers: A Framework of Unifying Multi-Modality in Multi-Turn Dialog},
   author={Gao, Shen and Chen, Xiuying and Li, Mingzhe and Liu, Li and Zhao, Dongyan and Yan, Rui},
-  booktitle = {The World Wide Web Conference},
+  booktitle = {The World Wide Web Conference (WWW '20)},
   publisher = {Association for Computing Machinery},
   address = {New York, NY, USA},
   year = {2020}
