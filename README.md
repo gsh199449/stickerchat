@@ -51,7 +51,7 @@ Each line in the JSON file represents one data sample, which contains the dialog
             "reply_to_msg_id": null,
             "id": 52002,
             "from_id": 284336329
-        },
+        }
     ],
     "current": {
         "from_id": 271484871,
@@ -64,6 +64,22 @@ Each line in the JSON file represents one data sample, which contains the dialog
 ```
 
 Note that the `sticker_alt` is given by the author of the sticker set, some of the authors use random emoji labels in their sticker set.
+
+# Train & Evaluate
+First, unzip all the data files into a directory, and we use `/share/data` for example.
+Then, create a directory for saving the checkpoints and log files, and we use `/share/logs` for example.
+Finally, go into the source code directory, and run:
+
+```shell script
+python3 sticker_classification.py --exp_name=release_check --log_root=/share/logs --base_path=/share/data
+```
+
+Note that, you can use the flag `--test_path` to specify the dataset to evaluate. 
+By default, we use the validation set `release_val.json` to evaluate the model.
+
+After training, the checkpoints can be found at `/share/logs/release_check/train`.
+This code will evaluate the model in every 800 training steps, and the evaluation results of dataset (specified by `--test_path`) are listed in file `/share/logs/release_check/metric.txt`.
+The frequency of automatic model evaluation can be changed using flag `--auto_test_step` (default value is 800 steps).
 
 # Citation
 
