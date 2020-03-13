@@ -66,8 +66,6 @@ Each line in the JSON file represents one data sample, which contains the dialog
 Note that the `sticker_alt` is given by the author of the sticker set, some of the authors use random emoji labels in their sticker set.
 
 # Train & Evaluate
-
-
 First, unzip all the data files into a directory, and we use `/share/data` for example.
 Then, create a directory for saving the checkpoints and log files, and we use `/share/logs` for example.
 Before training, you should install all the required packages listed in the `requirements.txt` file.
