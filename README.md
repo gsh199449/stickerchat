@@ -87,7 +87,7 @@ The frequency of automatic model evaluation can be changed using flag `--auto_te
 ```bibtex
 @inproceedings{gao2020sticker,
   title={Learning to Respond with Stickers: A Framework of Unifying Multi-Modality in Multi-Turn Dialog},
-  author={Gao, Shen and Chen, Xiuying and Li, Mingzhe and Liu, Li and Zhao, Dongyan and Yan, Rui},
+  author={Gao, Shen and Chen, Xiuying and Liu, Chang and Liu, Li and Zhao, Dongyan and Yan, Rui},
   booktitle = {The World Wide Web Conference (WWW '20)},
   publisher = {Association for Computing Machinery},
   address = {New York, NY, USA},
