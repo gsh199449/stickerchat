@@ -1,7 +1,7 @@
 Dataset for WWW 2020 [paper](https://arxiv.org/abs/2003.04679) "Learning to Respond with Stickers: A Framework of Unifying Multi-Modality in Multi-Turn Dialog"
 
 # How to get the dataset
-Signed the following copyright announcement with your name and organization. Then complete the form online(https://forms.gle/APosP3W9vganmx9G6) and mail to shengao#pku.edu.cn ('#'->'@'), we will send you the corpus by e-mail when approved.
+Signed the following copyright announcement with your name and organization. Then complete the form online(https://forms.gle/APosP3W9vganmx9G6) and **mail** to shengao#pku.edu.cn ('#'->'@'), we will send you the corpus by e-mail when approved.
 
 # Copyright
 The original copyright of all the conversations belongs to the source owner.
